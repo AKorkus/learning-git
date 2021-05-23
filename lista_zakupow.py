@@ -15,5 +15,5 @@ for sklep in shopping_dikt:
     shopping_count += len(shopping_dikt[sklep])
 print(f"W sumie kupuję {shopping_count} produktów.")
 
-# Zmiana z na repozytorium zdalnym:
+# Zmiana na repozytorium zdalnym:
 print("Edytowano w githubie...")
