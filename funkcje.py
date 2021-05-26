@@ -24,11 +24,18 @@ def kaller(funkcja=inne):
 def oblicz(x, *args):
     power = len(args)
     y = 0
-    print(len(args))
     for i in args:
         power -= 1
         y += i*x**power
     return y
 
 
-print(oblicz(1, 1, -2, 1))
+print(f"Wynik to {oblicz(1, 1, -2, 1)}")
+
+
+def count_them_all(*args, **kwargs):
+    print(len(args))
+    print(len(kwargs))
+
+
+count_them_all(1, 2, 3, "A", a=1, b=2)
