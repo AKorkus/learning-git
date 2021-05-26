@@ -26,10 +26,9 @@ def oblicz(x, *args):
     y = 0
     print(len(args))
     for i in args:
-        y += i*x**power
         power -= 1
+        y += i*x**power
     return y
 
 
-print(oblicz(2, 3, -2, 1))
-print("chuj")
+print(oblicz(1, 1, -2, 1))
