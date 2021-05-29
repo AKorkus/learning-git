@@ -1,6 +1,10 @@
 def is_palindrome(word):
-    drow = word[::-1]
-    return word.lower() == drow.lower()
+    word1 = ""
+    for i in word:
+        if i.isalnum():
+            word1 += i
+    drow = word1[::-1]
+    return word1.lower() == drow.lower()
 
 
 # print(is_palindrome("Hahah"))
